@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_language_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_profile" />
+
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="@string/title_tasks"/>
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="@string/title_friends" />
+
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "935302425129",
+    "firebase_url": "https://med2-205.firebaseio.com",
+    "project_id": "med2-205",
+    "storage_bucket": "med2-205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935302425129:android:8032b268c7665e66954a38",
+        "android_client_info": {
+          "package_name": "com.example.medtonulfem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935302425129-iu18t4059f2rlcgubqsgg2usp8ubptfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkH6dkt0RqOViVntni6reUr7ETINY2TaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935302425129-iu18t4059f2rlcgubqsgg2usp8ubptfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
