@@ -1,12 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".ProfileFragment">
 
 
+    <ImageButton
+        android:id="@+id/button_badge_water"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="276dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earthAvatar"
+        app:srcCompat="@drawable/badges_water_bw" />
+
+    <ImageButton
+        android:id="@+id/button_badge_light"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="376dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earthAvatar"
+        app:srcCompat="@drawable/badges_light_bw" />
+
+    <ImageButton
+        android:id="@+id/button_badge_trash"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="376dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earthAvatar"
+        app:srcCompat="@drawable/badges_trash_bw" />
+
+
+    <TextView
+        android:id="@+id/txtNameWaterBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorWhite"
+        android:textSize="15sp"
+        android:text="Water Slayer"
+        app:layout_constraintStart_toStartOf="@id/button_badge_water"
+        app:layout_constraintEnd_toEndOf="@id/button_badge_water"
+        app:layout_constraintTop_toBottomOf="@id/button_badge_water"/>
+
+    <TextView
+        android:id="@+id/txtNameTrashBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorWhite"
+        android:textSize="15sp"
+        android:text="Trash Slayer"
+        app:layout_constraintStart_toStartOf="@id/button_badge_trash"
+        app:layout_constraintEnd_toEndOf="@id/button_badge_trash"
+        app:layout_constraintTop_toBottomOf="@id/button_badge_trash"/>
+
+    <TextView
+        android:id="@+id/txtNameLightBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorWhite"
+        android:textSize="15sp"
+        android:text="Light Slayer"
+        app:layout_constraintStart_toStartOf="@id/button_badge_light"
+        app:layout_constraintEnd_toEndOf="@id/button_badge_light"
+        app:layout_constraintTop_toBottomOf="@id/button_badge_light"/>
+
+
+    <ImageView
+        android:id="@+id/earthAvatar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earthAvatar"
+        app:layout_constraintVertical_bias="0.105"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:background="#000"
+        app:layout_constraintTop_toBottomOf="@+id/button_badge_trash" />
+
+    <ProgressBar
+        android:id="@+id/progressBarProfile"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bearthaProfileStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Beartha"
+        android:textColor="@color/textColorWhite"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/earthAvatar" />
+
+    <TextView
+        android:id="@+id/userPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Points"
+        android:textAlignment="center"
+        android:textColor="@color/textColorWhite"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/userPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Position"
+        android:textColor="@color/textColorWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/userPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userPoints" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Your profile name"
+        android:textColor="@color/textColorWhite"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/profileImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toTopOf="@id/profileImage"
+        app:layout_constraintVertical_bias="0.471" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

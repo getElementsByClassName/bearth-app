@@ -1,48 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:background="@drawable/card_bg"
+    android:layout_height="102dp">
+
+    <ImageView
+        android:id="@+id/scoreboardImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="16dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/scoreboardImage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Name"
             android:id="@+id/nameTextView"
-            android:padding="10dp"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            android:layout_alignParentLeft="true" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:text="" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Quote....................."
             android:id="@+id/pointsTextView"
-            android:padding="10dp"
-            android:layout_alignParentLeft="true" />
-
-    <!--    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Description........."
-            android:textStyle="italic"
-            android:id="@+id/photourlTextView" />-->
-
-        <ImageView
-            android:id="@+id/scoreboardImage"
-            android:layout_alignParentRight="true"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:layout_alignParentLeft="true"
+            android:text=""
+            android:textColor="@color/browser_actions_title_color"
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary" />
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+

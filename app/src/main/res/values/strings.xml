@@ -12,4 +12,39 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_data" />
+    <string name="title_activity_task_activity">task_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <!--Tasks string shower values-->
+
+    <string name="task_dry_description">
+        Din avatar tørster!\nSpar på vandet i dag og tag et kortere bad. Du kan optjene op til 250 point ved at tage et bad på maks 5 minutter
+    </string>
+
+    <!--Tasks string power values-->
+
+    <string name="task_energy">Energibesparelse 140 Point</string>
+    <string name="task_power_description">
+        Din avatar overopheder!\nSelvom elapparater ikke er i brug, bruger de stadig strøm. Hjælp din avatar, og træk stikkene ud.
+    </string>
+    <string name="task_tv">TV</string>
+    <string name="task_charger">Opladere</string>
+    <string name="task_computer">Computer</string>
+    <string name="task_games">Spillekonsol</string>
+    <string name="task_light">Lys</string>
+    <string name="task_kitchen">Elektrisk Køkkenudstyr</string>
+    <string name="task_bathroom">Elektrisk Badeværelsesudstyr</string>
+
+
+
+    <string name="task_complete">Opgave fuldført</string>
 </resources>
